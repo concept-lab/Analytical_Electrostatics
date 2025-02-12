@@ -1,9 +1,9 @@
-# Analytical PB
+# Analytical Electrostatics
 
 This repository contains a MATLAB script to compute the analytical solution of the Linearized Poisson-Boltzmann equation:
 
 $$
--\mathrm{div} \left( \varepsilon_0 \varepsilon_r \nabla \varphi \right) + \kappa^2 \varphi = \rho^f
+-\mathrm{div} \left( \varepsilon_0 \varepsilon_r(\mathbf r) \nabla \varphi \right) + \kappa(\mathbf r)^2 \varphi = \rho^f
 $$
 
 for solutes modeled as $N_s$ non-overlapping dielectric spheres $\Omega_{m,i}$ ($i=1,\ldots,N_s$) with the same relative dielectric constant $\varepsilon_{r,m}$. Each sphere, centered at $\mathbf r_i\in\mathbb R^3$, has a radius $R_i$ and contains a fixed centrally-located point charge $q_i$.  The goal is to determine the total self-consistent potential  $\phi(\mathbf r)$  at a given point $\mathbf r\in\mathbb R^3$ in the form described in [1,2,3].
