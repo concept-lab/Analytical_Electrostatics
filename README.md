@@ -1,4 +1,14 @@
 # Analytical Electrostatics
+---------------------------
+Copyright (C) 2024-2025 Sergii V. Siryk
+
+Copyright (C) 2024-2025 Vincenzo Di Florio
+
+This software is distributed under the terms
+the terms of the GNU/GPL licence v3
+
+# Overview
+----------
 
 This repository contains a MATLAB script to compute the analytical solution of the Linearized Poisson-Boltzmann equation:
 
@@ -9,6 +19,7 @@ $$
 for solutes modeled as $N_s$ non-overlapping dielectric spheres $\Omega_{m,i}$ ($i=1,\ldots,N_s$) with the same relative dielectric constant $\varepsilon_{r,m}$. Each sphere, centered at $\mathbf r_i\in\mathbb R^3$, has a radius $R_i$ and contains a fixed centrally-located point charge $q_i$.  The goal is to determine the total self-consistent potential  $\phi(\mathbf r)$  at a given point $\mathbf r\in\mathbb R^3$ in the form described in [1,2,3].
 
 # Description of the script
+---------------------------
 
 - **`analytical_pb.m`** :   Main script (wrapper).
 - **`multi_spheres_cg5.m`** :   Computes the expansion coefficients of the potentials, used for further calculations, and the total energy.
@@ -17,6 +28,7 @@ for solutes modeled as $N_s$ non-overlapping dielectric spheres $\Omega_{m,i}$ (
 - **`array_cg15.mat`** :   Pre-computed Clebsch-Gordan coefficients for calculations with n_max<=15
 
 # Bibliography
+--------------
 
 [1] Siryk, S. V., Bendandi, A., Diaspro, A., & Rocchia, W. (2021). Charged dielectric spheres interacting in electrolytic solution: A linearized Poisson–Boltzmann equation model. The Journal of Chemical Physics, 155(11).
 
